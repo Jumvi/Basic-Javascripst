@@ -1,17 +1,19 @@
-// function voyels(mots){
-//     const word = mots.toString();
-//     const vowels = ['a','e','i','o','u','y'];
-//     let resu = [];
-//     for(let i in vowels){
-//         if(word.includes(i)){
-//             console.log(i)
-//             resu.push(i);
-//         }
-//     }
-//    console.log(resu)
-// }
+// define a function's return a voyels in a phrase and there number
 
-// voyels(manger);
+function voyelsInPhrase(mots){
+    const wordFromVoyels = mots;
+    const frenchVoyelles = ['a','e','i','o','u','y'];
+    let numberOfVoyels = [];
+    for(let i in frenchVoyelles){
+        if(wordFromVoyels.includes(frenchVoyelles.at(i))){
+            numberOfVoyels.push(frenchVoyelles.at(i));
+        }
+    }
+   console.log(` the voyels in this phrase is ${numberOfVoyels}, there are ${numberOfVoyels.length}`);
+}
+
+    // e.g Exute function voyelsPhrase
+voyelsInPhrase('mangerioayuopg');
 
 // exo2 Return one digit from un number
 
@@ -29,18 +31,18 @@
 
 // define  function's take 2 numbers and return their mean
 
-function meanAvg(a,b){
-    const number = [a,b];
-   const sum = number.reduce((a,b)=>{
-        return a+b;
-    })
+// function meanAvg(a,b){
+//     const numbers = [a,b];
+//     const sum = numbers.reduce((a,b)=>{
+//         return a+b;
+//     })
 
-    const avg = sum / number.length ;
-    console.log (avg);
-}
+//     const avg = sum / number.length ;
+//     console.log (avg);
+// }
 
-// Execute function
+//eg: Execute function
 
-meanAvg(8,2);
+// meanAvg(8,2);
 
 
