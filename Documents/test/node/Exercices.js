@@ -47,13 +47,20 @@
 
 // define a fuction's take an Integer and convert it on seconds.
 
-function minInSecond(minute){
-    const seconds = minute * 60;
-    const hours = minute * 60;
-    const secHour = minInSecond(hours);
-    console.log(`${minute} equals ${seconds} secs and ${secHour}` )
+// function minInSecond(minute){
+//     const seconds = minute * 60;
+//     console.log(`${minute} equals ${seconds} secs and ${secHour}` )
+// }
+// // eg, execute function
+// minInSecond(160);
+
+// define function's taks age in year and convert it in days
+
+function dateYearInDay(dateInyear){
+    const dateInDay = dateInyear * 365;
+    console.log(`Your age in day is ${dateInDay}`);
 }
-// eg, execute function
-minInSecond(160);
+
+dateYearInDay(28);
 
 
