@@ -2,7 +2,7 @@
 
 function voyelsInPhrase(mots){
     const wordFromVoyels = mots;
-    const frenchVoyelles = ['a','e','i','o','u','y'];
+    const frenchVoyelles = ['a','e','i','o','u','y','A','E','I','O','U','Y'];
     let numberOfVoyels = [];
     for(let i in frenchVoyelles){
         if(wordFromVoyels.includes(frenchVoyelles.at(i))){
