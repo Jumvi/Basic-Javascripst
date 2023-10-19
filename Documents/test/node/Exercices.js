@@ -1,19 +1,19 @@
 // define a function's return a voyels in a phrase and there number
 
-function voyelsInPhrase(mots){
-    const wordFromVoyels = mots;
-    const frenchVoyelles = ['a','e','i','o','u','y','A','E','I','O','U','Y'];
-    let numberOfVoyels = [];
-    for(let i in frenchVoyelles){
-        if(wordFromVoyels.includes(frenchVoyelles.at(i))){
-            numberOfVoyels.push(frenchVoyelles.at(i));
-        }
-    }
-   console.log(` the voyels in this phrase is ${numberOfVoyels}, there are ${numberOfVoyels.length}`);
-}
+// function voyelsInPhrase(mots){
+//     const wordFromVoyels = mots;
+//     const frenchVoyelles = ['a','e','i','o','u','y','A','E','I','O','U','Y'];
+//     let numberOfVoyels = [];
+//     for(let i in frenchVoyelles){
+//         if(wordFromVoyels.includes(frenchVoyelles.at(i))){
+//             numberOfVoyels.push(frenchVoyelles.at(i));
+//         }
+//     }
+//    console.log(` the voyels in this phrase is ${numberOfVoyels}, there are ${numberOfVoyels.length}`);
+// }
 
     // e.g Exute function voyelsPhrase
-voyelsInPhrase('mangerioayuopg');
+//voyelsInPhrase('mangerioayuopg');
 
 // exo2 Return one digit from un number
 
@@ -44,5 +44,16 @@ voyelsInPhrase('mangerioayuopg');
 //eg: Execute function
 
 // meanAvg(8,2);
+
+// define a fuction's take an Integer and convert it on seconds.
+
+function minInSecond(minute){
+    const seconds = minute * 60;
+    const hours = minute * 60;
+    const secHour = minInSecond(hours);
+    console.log(`${minute} equals ${seconds} secs and ${secHour}` )
+}
+// eg, execute function
+minInSecond(160);
 
 
