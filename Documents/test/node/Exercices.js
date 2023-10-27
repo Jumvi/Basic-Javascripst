@@ -56,11 +56,37 @@
 
 // define function's taks age in year and convert it in days
 
-function dateYearInDay(dateInyear){
-    const dateInDay = dateInyear * 365;
-    console.log(`Your age in day is ${dateInDay}`);
+// function dateYearInDay(dateInyear){
+//     const dateInDay = dateInyear * 365;
+//     console.log(`Your age in day is ${dateInDay}`);
+// }
+
+// dateYearInDay(28);
+
+// Write a JavaScript program that accepts a number as input and inserts dashes (-) between each even number. For example if you accept 025468 the output should be 0-254-6-8.
+
+function dashInsert(number){
+    const numberArray = number.toString();
+    numberArray.split();
+    let myArray = [];
+    for(let i = 0;i< numberArray.length; i++){
+        if(numberArray.at(i) % 2 == 0  ){
+            myArray.push(numberArray.at(i));
+            myArray.push('-');
+        }else{
+            myArray.push(numberArray.at(i)) 
+        }
+        
+    }
+     let arrayLength = myArray.length -1;
+     if(myArray[arrayLength] == ('-')){
+        myArray.pop();
+     }
+     console.log(myArray.join(' '))
 }
 
-dateYearInDay(28);
+
+
+dashInsert(698487634)
 
 
