@@ -65,28 +65,40 @@
 
 // Write a JavaScript program that accepts a number as input and inserts dashes (-) between each even number. For example if you accept 025468 the output should be 0-254-6-8.
 
-function dashInsert(number){
-    const numberArray = number.toString();
-    numberArray.split();
-    let myArray = [];
-    for(let i = 0;i< numberArray.length; i++){
-        if(numberArray.at(i) % 2 == 0  ){
-            myArray.push(numberArray.at(i));
-            myArray.push('-');
-        }else{
-            myArray.push(numberArray.at(i)) 
-        }
+// function dashInsert(number){
+//     const numberArray = number.toString();
+//     numberArray.split();
+//     let myArray = [];
+//     for(let i = 0;i< numberArray.length; i++){
+//         if(numberArray.at(i) % 2 == 0  ){
+//             myArray.push(numberArray.at(i));
+//             myArray.push('-');
+//         }else{
+//             myArray.push(numberArray.at(i)) 
+//         }
         
-    }
-     let arrayLength = myArray.length -1;
-     if(myArray[arrayLength] == ('-')){
-        myArray.pop();
-     }
-     console.log(myArray.join(' '))
+//     }
+//      let arrayLength = myArray.length -1;
+//      if(myArray[arrayLength] == ('-')){
+//         myArray.pop();
+//      }
+//      console.log(myArray.join(' '))
+// }
+
+
+
+// dashInsert(698487634)
+
+// write a function that accepts 2 strings and return the last occurance of the second  string in the first string
+
+function occurenceOfSecondString(string1, string2){
+    let word1 = string1.toString();
+    let word2 = string2.toString();
+  let firstIndex = word1.indexOf(word2); 
+  let secondIndex = word1.indexOf(word2,firstIndex +1);
+ return console.log(secondIndex);
 }
 
-
-
-dashInsert(698487634)
+occurenceOfSecondString('aite eu aha tait','it');
 
 
