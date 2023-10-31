@@ -120,15 +120,32 @@
 
 // pointBasketBall(4,3,2);
 
-const myfruitsArray = ["potato","banana","mangue","juice"];
-let myListContener = document.createElement('ul');
-let htmlBody = document.querySelector('body');
+// const myfruitsArray = ["potato","banana","mangue","juice"];
+// let myListContener = document.createElement('ul');
+// let htmlBody = document.querySelector('body');
 
 
-for(let i = 0;i< myfruitsArray.length; i++){
-    let myListElement = document.createElement('li');
-    myListElement.innerText = myfruitsArray.at(i);
-    myListContener.appendChild(myListElement);
+// for(let i = 0;i< myfruitsArray.length; i++){
+//     let myListElement = document.createElement('li');
+//     myListElement.innerText = myfruitsArray.at(i);
+//     myListContener.appendChild(myListElement);
+// }
+
+// htmlBody.appendChild(myListContener);
+
+// let myImage = document.createElement('img');
+// myImage.setAttribute('src','photos/jud.JPG');
+// myImage.setAttribute('heigth','50');
+// myImage.setAttribute('width','100');
+// myImage.setAttribute('alt','child');
+
+// document.querySelector('body').appendChild(myImage);
+
+let myContener = document.querySelector(div);
+let myListeContener2 = document.querySelector(ul);
+let myListElement2 = document.createElement('li');
+
+
+for(let i = myContener.myListeContener2.length ; i=> 0 ; i--){
+    myListeContener2.appendChild(myListeContener2.myListElement2[i])
 }
-
-htmlBody.appendChild(myListContener);
