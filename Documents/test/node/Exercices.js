@@ -19,7 +19,7 @@
 
 // function OnesDigit(nombre){
 //     const number = nombre.toString()
-//     for(let i = 1; i< number.length -1;i++){
+//     for(let i = 1; i<= number.length;i++){
 //         let myIndex =Math.floor(Math.random()* ((number.length -1) - 1 +1) + 1) ;
 //         console.log(number.at(myIndex));
 //     break 
@@ -91,14 +91,44 @@
 
 // write a function that accepts 2 strings and return the last occurance of the second  string in the first string
 
-function occurenceOfSecondString(string1, string2){
-    let word1 = string1.toString();
-    let word2 = string2.toString();
-  let firstIndex = word1.indexOf(word2); 
-  let secondIndex = word1.indexOf(word2,firstIndex +1);
- return console.log(secondIndex);
+// function occurenceOfSecondString(string1, string2){
+//     let word1 = string1.toString();
+//     let word2 = string2.toString();
+//   let firstIndex = word1.indexOf(word2); 
+//   let secondIndex = word1.indexOf(word2,firstIndex +1);
+//  return console.log(secondIndex);
+// }
+
+// occurenceOfSecondString('aite eu aha tait','it');
+
+//You are counting points for a basketball game, given the amount of 2-pointers scored and 3-pointers scored, find the final points for the team and return that value.
+
+// function pointBasketBall(tirNumber,for3Point, for2point){
+//     let pointTwoo;
+//     let pointTrhee;
+//     if(for2point){
+//         pointTwoo = for2point * tirNumber;
+//     }else{
+//         pointTrhee = for3Point * tirNumber
+//     }
+
+//     let finalPoint = pointTwoo + pointTrhee ;
+
+//     return console.log(finalPoint);
+    
+// }
+
+// pointBasketBall(4,3,2);
+
+const myfruitsArray = ["potato","banana","mangue","juice"];
+let myListContener = document.createElement('ul');
+let htmlBody = document.querySelector('body');
+
+
+for(let i = 0;i< myfruitsArray.length; i++){
+    let myListElement = document.createElement('li');
+    myListElement.innerText = myfruitsArray.at(i);
+    myListContener.appendChild(myListElement);
 }
 
-occurenceOfSecondString('aite eu aha tait','it');
-
-
+htmlBody.appendChild(myListContener);
